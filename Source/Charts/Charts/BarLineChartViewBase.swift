@@ -513,7 +513,7 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
     }
     
     //add 用
-    private var isHighLightDraging = false
+    private var _isHighLightDraging = false
     
     private var _isDragging = false
     private var _isScaling = false
@@ -691,7 +691,7 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
             {
                 _isDragging = true
                 //edit tujinguo
-                self.isHighLightDraging = false
+                _isHighLightDraging = false
                 
                 _closestDataSetToTouch = getDataSetByTouchPoint(point: recognizer.nsuiLocationOfTouch(0, inView: self))
                 
@@ -735,7 +735,7 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
                 _isDragging = false
                 
                 //edit tujinguo
-                self.isHighLightDraging = true;
+                _isHighLightDraging = true;
             }
         }
         else if recognizer.state == NSUIGestureRecognizerState.changed
@@ -789,7 +789,7 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
                 _isDragging = false
             }
             //add tujinguo
-            self.isHighLightDraging = false
+            _isHighLightDraging = false
             
             if _outerScrollView !== nil
             {
@@ -1526,9 +1526,9 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
         return vals
     }
     //是否highlighted正在draging
-    @objc open var highlightedDraging :Bool
+    @objc open var isHighlightedDraging :Bool
     {
-        return self.isHighLightDraging;
+        return _isHighLightDraging;
     }
     /// is dragging enabled? (moving the chart with the finger) for the chart (this does not affect scaling).
     @objc open var dragEnabled: Bool
