@@ -513,7 +513,7 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
     }
     
     //add 用
-    internal var isHighLightDraging = false
+    private var isHighLightDraging = false
     
     private var _isDragging = false
     private var _isScaling = false
@@ -1525,7 +1525,11 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
 
         return vals
     }
-
+    //是否highlighted正在draging
+    @objc open var highlightedDraging :Bool
+    {
+        return self.isHighLightDraging;
+    }
     /// is dragging enabled? (moving the chart with the finger) for the chart (this does not affect scaling).
     @objc open var dragEnabled: Bool
     {
