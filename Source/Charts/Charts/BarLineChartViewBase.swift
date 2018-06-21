@@ -512,6 +512,9 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
         case y
     }
     
+    //add 用
+    internal var isHighLightDraging = false
+    
     private var _isDragging = false
     private var _isScaling = false
     private var _gestureScaleAxis = GestureScaleAxis.both
@@ -687,6 +690,8 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
             if !self.hasNoDragOffset || !self.isFullyZoomedOut
             {
                 _isDragging = true
+                //edit tujinguo
+                self.isHighLightDraging = false
                 
                 _closestDataSetToTouch = getDataSetByTouchPoint(point: recognizer.nsuiLocationOfTouch(0, inView: self))
                 
@@ -728,6 +733,9 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
                 // We will only handle highlights on NSUIGestureRecognizerState.Changed
                 
                 _isDragging = false
+                
+                //edit tujinguo
+                self.isHighLightDraging = true;
             }
         }
         else if recognizer.state == NSUIGestureRecognizerState.changed
@@ -780,6 +788,8 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
                 
                 _isDragging = false
             }
+            //add tujinguo
+            self.isHighLightDraging = false
             
             if _outerScrollView !== nil
             {
