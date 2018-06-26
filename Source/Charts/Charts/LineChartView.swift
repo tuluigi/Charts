@@ -25,4 +25,9 @@ open class LineChartView: BarLineChartViewBase, LineChartDataProvider
     // MARK: - LineChartDataProvider
     
     open var lineData: LineChartData? { return _data as? LineChartData }
+    
+    //Mark: 给子类用
+    override internal func drawMarkers(context: CGContext) {
+        super.drawMarkers(context: context)
+    }
 }
