@@ -75,6 +75,7 @@
 		225B368B1F6EBA640005B3D5 /* StackedBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAED1A1ABBFB340013F194 /* StackedBarChartViewController.xib */; };
 		225B368C1F6EBBB00005B3D5 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0630AE411D8126C0008859B0 /* Charts.framework */; };
 		225B368D1F6EBBB00005B3D5 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0630AE411D8126C0008859B0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A00708420E1D3AF006F25AF /* MyTestLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00708320E1D3AF006F25AF /* MyTestLineChartView.swift */; };
 		55E356501ADC638F00A57971 /* BubbleChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E3564D1ADC638F00A57971 /* BubbleChartViewController.xib */; };
 		55E356511ADC638F00A57971 /* BubbleChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E3564F1ADC638F00A57971 /* BubbleChartViewController.m */; };
 		5B0CC7851ABB875400665592 /* PieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0CC7831ABB875400665592 /* PieChartViewController.m */; };
@@ -233,6 +234,7 @@
 		225B36581F6EBA410005B3D5 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		225B36591F6EBA410005B3D5 /* SinusBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinusBarChartViewController.swift; sourceTree = "<group>"; };
 		225B365A1F6EBA410005B3D5 /* CandleStickChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickChartViewController.swift; sourceTree = "<group>"; };
+		2A00708320E1D3AF006F25AF /* MyTestLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestLineChartView.swift; sourceTree = "<group>"; };
 		55E3564D1ADC638F00A57971 /* BubbleChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BubbleChartViewController.xib; sourceTree = "<group>"; };
 		55E3564E1ADC638F00A57971 /* BubbleChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleChartViewController.h; sourceTree = "<group>"; };
 		55E3564F1ADC638F00A57971 /* BubbleChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleChartViewController.m; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 				5BE377D41D42511A006EB34F /* Formatters */,
 				5BD47E541ABB0177008FCEC6 /* Components */,
 				5BD8F06F1AB89C7100566E05 /* Demos */,
+				2A00708320E1D3AF006F25AF /* MyTestLineChartView.swift */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -837,6 +840,7 @@
 				5BD47E651ABB424E008FCEC6 /* BarChartViewController.m in Sources */,
 				5BDEDC471ABB871E007D3A60 /* CombinedChartViewController.m in Sources */,
 				5BE377F21D47FDF1006EB34F /* IntAxisValueFormatter.m in Sources */,
+				2A00708420E1D3AF006F25AF /* MyTestLineChartView.swift in Sources */,
 				5BD8F0741AB89CE500566E05 /* LineChart1ViewController.m in Sources */,
 				5BE377DE1D425151006EB34F /* DayAxisValueFormatter.m in Sources */,
 				5BEAED401ABC1AC60013F194 /* SinusBarChartViewController.m in Sources */,
